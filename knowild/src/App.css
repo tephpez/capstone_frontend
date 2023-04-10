@@ -1,27 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Righteous&display=swap");
+
+/* PALETTE
+#954A06 = RUST
+#AB8A75 = EARTH
+#B5B08E = MOSS
+#909194 = FOG
+#F2E9E2 = SAND
+*/
+
+
+
 /*****************************************************************
   APP   **********************************************************
 *****************************************************************/
+
 .app {
-  background-color: grey;
-  font-family: Verdana, sans-serif;
-  height: 100vh;
+  background-color: #F2E9E2;
+  min-width: 600px;
+  text-align: center;
+  margin: 0;
+  font-family: 'Comfortaa', cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+  margin: 0 auto;
+}
+
+#page-format{
   width: 100vw;
+  display: flex;
+}
+
+#content-container{
+  /* background-color: purple; */
+  min-height: 80vh;
+  width: 80vw;
+}
+
+#sidebar-container{
+  width:20vw;
+  gap: 5px;
+}
+
+.spacer{
+  height: 40px;
+}
+
+button{
+  font-family: 'Comfortaa', cursive;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 
 /*****************************************************************
-  HEADER   *******************************************************
-*****************************************************************/
-.header{
-  background-color: red;
-}
-
-
-/*****************************************************************
-  NAVBAR   *******************************************************
+NAVBAR   *********************************************************
 *****************************************************************/
 .nav{
-  background-color: orange;
+  height: 16vh;
+  min-height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+}
+
+#header-btn{
+  font-family: 'Righteous', cursive;
+  font-size: 50px;
+}
+
+
+.links-container{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.logo-container{
+}
+
+.nav-btn{
+  background-color: #AB8A75;
+  border-radius: 50px;
+  padding: 5px 0px;
+  color:white;
+  width:200px;
+  font-size: 15px;
+  font-weight: 1000;
+}
+
+#basket-btn{
+  background-color: #954A06;
+  margin-top: 10px;
+}
+
+
+
+#addfind-btn{
+  background-color: #909194;
+  align-self: right;
 }
 
 
@@ -29,30 +111,53 @@
   HOME   *********************************************************
 *****************************************************************/
 .home{
-  background-color: brown;
-}
-.first-container{
-  background-color: yellow;
 }
 
-.second-container{
-  background-color: green;
+.categories-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  min-height: 400px;
+  justify-content: right;
+  align-items: center;
+  padding-right: 50px;
+  /* background-color: purple; */
 }
 
-.third-container{
-  background-color: blue;
+.categories-card{
+  width: 250px;
+  height: 150px;
+  background-color: #B5B08E;
+  border-radius: 10px;
 }
+
+.locations-container{
+  background-color:royalblue;
+  height:50vh;
+}
+
+.category-btn{
+  width: 250px;
+  height: 150px;
+}
+
+
+/*****************************************************************
+  SECTION   *******************************************************
+*****************************************************************/
+.profile-container{
+  width: 90vw;
+}
+
+
 
 
 /*****************************************************************
   FOOTER   *******************************************************
 *****************************************************************/
 .footer{
-  background-color: blueviolet;
+  background-color: #909194;
+  height: 10vh;
 }
 
-
-/*****************************************************************
-  NAVBAR   *******************************************************
-*****************************************************************/
 

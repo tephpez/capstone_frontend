@@ -1,22 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
-function Header() {
-  return (
-    <div className="header">
-      <Link to="/">
-        <button> HOME </button>
-      </Link>
-    </div>
-  );
+function Herbs () {
+    return(
+        <div>
+THIS IS Herbs PAGE
+        </div>
+    );
 };
 
-export default Header;
-
+export default Herbs;
 
 
 //  SETUP    //////////////////////////////////////////////////////////////////////////////////////////////
 //  CODE     
 //  STYLES   
-//  SWEEP    
+//  SWEEP 
