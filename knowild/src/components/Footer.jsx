@@ -1,14 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 
 function Footer() {
     return (
       <div className="footer">
-        <span> FOOTER </span>
+        {/* <Link to=''></Link>
         <Link to=''></Link>
-        <Link to=''></Link>
-        <Link to=''></Link>
+        <Link to=''></Link> */}
       </div>
     );
   };

@@ -2,48 +2,58 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div className="home">
-      <div id="page-format">
-        
+    <div id="home">
+      <div id="component-format">
         <div id="content-container">
-          <div className="categories-container">
-            <div className="categories-card" id="mushrooms">
-              <Link to="/Mushrooms">
-                <button className="category-btn">mushrooms</button>
-              </Link>
-            </div>
-            <div className="categories-card" id="flowers">
-              <Link to="/Flowers">
-                <button className="category-btn">flowers</button>
-              </Link>
-            </div>
-            <div className="categories-card" id="fruits">
-              <Link to="/Fruits">
-                <button className="category-btn">fruits</button>
-              </Link>
-            </div>
-            <div className="categories-card" id="roots">
-              <Link to="/Roots">
-                <button className="category-btn">roots</button>
-              </Link>
-            </div>
-            <div className="categories-card" id="herbs">
-              <Link to="/Herbs">
-                <button className="category-btn">herbs</button>
-              </Link>{" "}
-            </div>
-            <div className="categories-card" id="leaves">
-              <Link to="/Leaves">
-                <button className="category-btn">leaves</button>
-              </Link>{" "}
-            </div>
-          </div>
-          <div className="locations-container">
-            <span> LOCATIONS </span>
-          </div>
-        </div>
+          <section className="section-container" id="categories">
+            <Link to="/Mushrooms">
+              <div className="category-card" id="mushrooms">
+                <span id="category-title">mushrooms</span>
+              </div>
+            </Link>
 
-        <div id="sidebar-container"></div>
+            <Link to="/Flowers">
+              <div className="category-card" id="flowers">
+                <span id="category-title">flowers</span>
+              </div>
+            </Link>
+
+            <Link to="/Fruits">
+              <div className="category-card" id="fruits">
+                <span id="category-title">fruits</span>
+              </div>
+            </Link>
+
+            <Link to="/Roots">
+              <div className="category-card" id="roots">
+                <span id="category-title">roots</span>
+              </div>
+            </Link>
+
+            <Link to="/Herbs">
+              <div className="category-card" id="herbs">
+                <span id="category-title">herbs</span>
+              </div>
+            </Link>
+
+            <Link to="/Leaves">
+              <div className="category-card" id="leafs">
+                <span id="category-title">leaves</span>
+              </div>
+            </Link>
+          </section>
+          <section className="section-container">
+            <div className="park-card">PARK 1</div>
+            <div className="park-card">PARK 2</div>
+            <div className="park-card">PARK 3</div>
+            <div className="park-card">PARK 4</div>
+          </section>
+        </div>
+        <div id="sidebar-container">
+          <Link to="/Basket">
+            <button className="app-btn" style={{backgroundColor:'#909194'}}> register </button>
+          </Link>
+        </div>
       </div>
     </div>
   );
@@ -55,3 +65,7 @@ export default Home;
 //  CODE
 //  STYLES
 //  SWEEP
+
+// sequelize model:generate --name User --attributes name:string,password:string,currentLocation:string,profPic:string
+// sequelize model:generate --name Park --attributes name:string,mapUrl:string,hours:string,state:string,address:string
+// sequelize model:generate --name Find --attributes commonName:string,botanicalName:string,uses:string,category:string,poisonWarning:string,dateFound:dateOnly,notes:string,picOne:string,picTwo:string,picThree:string,picFour:string,picFive:string,mapsLink:string,abundanceRating:integer,locationDesc:string,landmarks:string,userId:integer,parkId:integer

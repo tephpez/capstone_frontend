@@ -11,14 +11,11 @@
 
 
 /*****************************************************************
-  APP   **********************************************************
+   APP   ************************************************   APP   
 *****************************************************************/
-
-.app {
+#app {
   background-color: #F2E9E2;
-  min-width: 600px;
   text-align: center;
-  margin: 0;
   font-family: 'Comfortaa', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -29,24 +26,29 @@ body{
 }
 
 #page-format{
-  width: 100vw;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-#content-container{
-  /* background-color: purple; */
+#component-format{
+  display: flex;
+  flex-direction: row;
+}
+
+#component-container{
   min-height: 80vh;
-  width: 80vw;
 }
 
 #sidebar-container{
-  width:20vw;
-  gap: 5px;
+  width:180px;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
-.spacer{
-  height: 40px;
-}
 
 button{
   font-family: 'Comfortaa', cursive;
@@ -55,85 +57,165 @@ button{
   cursor: pointer;
 }
 
+button:active{
+  transform: translateY(2px);
+}
+
+
 
 /*****************************************************************
-NAVBAR   *********************************************************
+   NAVBAR   ******************************************   NAVBAR   
 *****************************************************************/
-.nav{
-  height: 16vh;
-  min-height: 100px;
+#nav{
+  height: 130px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 30px;
+}
+
+#logo-container{
+  background-color: #F2E9E2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+  /* height: 150px; */
+  margin-left: 30px;
+}
+
+#links-container{
+  display: flex;
+  flex-direction: column;
+  background-color: #F2E9E2;
+  height: 100%;
+  justify-content: end;
+  align-items: start;
+  width:180px;
+  gap: 6px;
 }
 
 #header-btn{
   font-family: 'Righteous', cursive;
   font-size: 50px;
+  color: black;
+}
+
+#knowild-logo{
+  height: 50px;
+  opacity: .8;
+
 }
 
 
-.links-container{
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.logo-container{
-}
-
-.nav-btn{
+.app-btn{
   background-color: #AB8A75;
   border-radius: 50px;
-  padding: 5px 0px;
   color:white;
-  width:200px;
+  min-width: 150px;
   font-size: 15px;
   font-weight: 1000;
+  height: 24px;
+
 }
 
+.app-btn:active{
+  transform: translateY(2px);
+
+}
 #basket-btn{
   background-color: #954A06;
-  margin-top: 10px;
+  margin-top: 16px;
 }
 
 
 
-#addfind-btn{
+#add-btn{
   background-color: #909194;
-  align-self: right;
 }
 
 
 /*****************************************************************
-  HOME   *********************************************************
+   HOME   *********************************************   HOME   
 *****************************************************************/
-.home{
+#home{
 }
 
-.categories-container{
+.section-container{
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  min-height: 400px;
-  justify-content: right;
+  min-height: 350px;
+  justify-content: center;
   align-items: center;
-  padding-right: 50px;
-  /* background-color: purple; */
+  gap: 15px;
 }
 
-.categories-card{
+
+
+.category-card{
   width: 250px;
   height: 150px;
   background-color: #B5B08E;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
-.locations-container{
-  background-color:royalblue;
-  height:50vh;
+#mushrooms{
+  background-image: url("assets/mushroom.png");
+  background-size: 90%;
+}
+
+#flowers{
+  background-image: url("assets/flower.png");
+}
+
+#fruits{
+  background-image: url("assets/fruit.png");
+  background-size: 110%;
+}
+
+#roots{
+  background-image: url("assets/root.png");
+}
+
+#herbs{
+  background-image: url("assets/herb.png");
+  background-size: 110%;
+
+}
+
+#leafs{
+  background-image: url("assets/leaf.png");
+}
+
+#category-title{
+  font-weight: 800;
+  color: black;
+  text-decoration: none;
+  padding:15px 20px;
+
+}
+
+.category-img{
+  width: 250px;
+  opacity: .4;
+}
+
+.category-img:hover{
+}
+
+.category-card:hover{
+  transform: scale(1.05);
+  opacity: .7;
+}
+
+.category-card:active{
+  transform: translateY(2px);
 }
 
 .category-btn{
@@ -141,19 +223,31 @@ NAVBAR   *********************************************************
   height: 150px;
 }
 
+.park-card{
+  background-color: #B5B08E;
+  height: 42vh;
+  border-radius: 10px;
+  width: 186px;
+}
 
+#mushrooms{
+}
 /*****************************************************************
-  SECTION   *******************************************************
+   BASKET   ******************************************   BASKET   
 *****************************************************************/
 .profile-container{
-  width: 90vw;
 }
 
 
 
+/*****************************************************************
+   CATEGORIES   *********************************   CATEGORIES   
+*****************************************************************/
+
+
 
 /*****************************************************************
-  FOOTER   *******************************************************
+   FOOTER   *****************************************   FOOTER   
 *****************************************************************/
 .footer{
   background-color: #909194;
@@ -161,3 +255,7 @@ NAVBAR   *********************************************************
 }
 
 
+a:-webkit-any-link {
+  cursor: pointer;
+  text-decoration: none;
+}

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Mushrooms () {
     return(
         <div className="home">
-            <div id="page-format"> 
+            <div id="component-format"> 
 
             <div id="content-container">
                 THIS IS MUSHROOMS PAGE

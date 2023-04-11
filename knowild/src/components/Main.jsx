@@ -14,16 +14,16 @@ import Leaves from "./Leaves";
 function App() {
   return (
     <div id="page-format">
-      <div id="content-container">
+      <div id="component-container">
         <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/Basket" element={<Basket />}></Route>
-          <Route path="/Mushrooms" element={<Mushrooms />}></Route>
-          <Route path="/Flowers" element={<Flowers />}></Route>
-          <Route path="/Fruits" element={<Fruits />}></Route>
-          <Route path="/Roots" element={<Roots />}></Route>
-          <Route path="/Herbs" element={<Herbs />}></Route>
-          <Route path="/Leaves" element={<Leaves />}></Route>
+          <Route path="/" element={ <Home/> }></Route>
+          <Route path="/Basket" element={ <Basket/> }></Route>
+          <Route path="/Mushrooms" element={ <Mushrooms/> }></Route>
+          <Route path="/Flowers" element={ <Flowers/> }></Route>
+          <Route path="/Fruits" element={ <Fruits/> }></Route>
+          <Route path="/Roots" element={ <Roots/> }></Route>
+          <Route path="/Herbs" element={ <Herbs/> }></Route>
+          <Route path="/Leaves" element={ <Leaves/> }></Route>
         </Routes>
       </div>
     </div>
@@ -33,6 +33,6 @@ function App() {
 export default App;
 
 //  SETUP    //////////////////////////////////////////////////////////////////////////////////////////////
-//  CODE
-//  STYLES
+//  CODE     //////////////////////////////////////////////////////////////////////////////////////////////
+//  STYLES   //////////////////////////////////////////////////////////////////////////////////////////////
 //  SWEEP
