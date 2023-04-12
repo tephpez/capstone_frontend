@@ -19,97 +19,47 @@
   font-family: 'Comfortaa', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-width: 600px;
 }
 
-body{
+body {
   margin: 0 auto;
 }
 
-#page-format{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#component-format{
+#component-format {
   display: flex;
   flex-direction: row;
+  /* justify-content: end; */
 }
 
-#component-container{
-  min-height: 80vh;
-}
-
-#sidebar-container{
-  width:180px;
+#sidebar-container {
   min-width: 180px;
   display: flex;
   flex-direction: column;
   align-items: start;
+  margin-top: 6px;
 }
 
-
-button{
+button {
   font-family: 'Comfortaa', cursive;
-  background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
-button:active{
+button:active {
   transform: translateY(2px);
 }
 
-
-
-/*****************************************************************
-   NAVBAR   ******************************************   NAVBAR   
-*****************************************************************/
-#nav{
-  height: 130px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+button:hover {
+  opacity: .7;
 }
 
-#logo-container{
-  background-color: #F2E9E2;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: start;
-  /* height: 150px; */
-  margin-left: 30px;
+a:-webkit-any-link {
+  cursor: pointer;
+  text-decoration: none;
 }
 
-#links-container{
-  display: flex;
-  flex-direction: column;
-  background-color: #F2E9E2;
-  height: 100%;
-  justify-content: end;
-  align-items: start;
-  width:180px;
-  gap: 6px;
-}
-
-#header-btn{
-  font-family: 'Righteous', cursive;
-  font-size: 50px;
-  color: black;
-}
-
-#knowild-logo{
-  height: 50px;
-  opacity: .8;
-
-}
-
-
-.app-btn{
+.app-btn {
   background-color: #AB8A75;
   border-radius: 50px;
   color:white;
@@ -117,21 +67,61 @@ button:active{
   font-size: 15px;
   font-weight: 1000;
   height: 24px;
-
 }
 
-.app-btn:active{
+.app-btn:active {
   transform: translateY(2px);
-
 }
-#basket-btn{
+
+
+/*****************************************************************
+   NAVBAR   ******************************************   NAVBAR   
+*****************************************************************/
+#nav {
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+#logo-container {
+  background-color: #F2E9E2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+  margin-left: 30px;
+  margin-bottom: 13px;
+}
+
+
+
+#links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width:180px;
+  gap: 6px;
+}
+
+#header-btn {
+  font-family: 'Righteous', cursive;
+  font-size: 55px;
+  color: black;
+}
+
+#knowild-logo {
+  height: 50px;
+  opacity: .8;
+}
+
+#basket-btn {
   background-color: #954A06;
   margin-top: 16px;
 }
 
-
-
-#add-btn{
+#add-btn {
   background-color: #909194;
 }
 
@@ -139,21 +129,33 @@ button:active{
 /*****************************************************************
    HOME   *********************************************   HOME   
 *****************************************************************/
-#home{
+#content-container {
+  margin-left:10vw;
+  margin-right:2vw;
+  min-width: 400px;
+  /* margin-right: 5vw; */
 }
 
-.section-container{
+@media only screen and (max-width: 650px) {
+  #content-container{
+    margin-left:20px;
+  }
+
+}
+
+.section-container {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   min-height: 350px;
-  justify-content: center;
-  align-items: center;
   gap: 15px;
+  width: fit-content;
+  /* justify-content: center; */
+  align-items: center;
+  min-width: 250px;
 }
 
-
-
-.category-card{
+.category-card {
   width: 250px;
   height: 150px;
   background-color: #B5B08E;
@@ -165,78 +167,117 @@ button:active{
   background-size: 100%;
 }
 
-#mushrooms{
+@media only screen and (max-width: 1092px) {
+  .category-card{
+    width: 220px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .category-card{
+    width: 140px;
+  }
+}
+#mushrooms {
   background-image: url("assets/mushroom.png");
   background-size: 90%;
 }
-
-#flowers{
+#flowers {
   background-image: url("assets/flower.png");
 }
-
-#fruits{
+#fruits {
   background-image: url("assets/fruit.png");
   background-size: 110%;
 }
-
-#roots{
+#roots {
   background-image: url("assets/root.png");
 }
-
-#herbs{
+#herbs {
   background-image: url("assets/herb.png");
   background-size: 110%;
-
 }
-
-#leafs{
+#leafs {
   background-image: url("assets/leaf.png");
 }
 
-#category-title{
+#category-title {
   font-weight: 800;
   color: black;
   text-decoration: none;
   padding:15px 20px;
-
 }
 
-.category-img{
+.category-img {
   width: 250px;
   opacity: .4;
 }
 
-.category-img:hover{
+
+@media only screen and (max-width: 771px) {
+  .category-img{
+    width: 170px;
+    transform: translateY(3px);
+  }
 }
 
-.category-card:hover{
+.category-card:hover {
   transform: scale(1.05);
   opacity: .7;
 }
 
-.category-card:active{
+.category-card:active {
   transform: translateY(2px);
 }
 
-.category-btn{
+.category-btn {
   width: 250px;
   height: 150px;
 }
 
-.park-card{
+.park-card {
   background-color: #B5B08E;
-  height: 42vh;
+  height: 300px;
   border-radius: 10px;
-  width: 186px;
+  width: 184px;
+}
+@media only screen and (max-width: 1092px) {
+  .park-card {
+    width: 330px;
+    height: 210px;
+  }
+}
+.park-card:hover {
+  transform: scale(1.05);
+  opacity: .7;
 }
 
-#mushrooms{
+.park-card:active {
+  transform: translateY(2px);
+}
+
+#locations{
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: nowrap; */
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.park-section{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* gap: 20px; */
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
 }
 /*****************************************************************
    BASKET   ******************************************   BASKET   
 *****************************************************************/
-.profile-container{
-}
 
 
 
@@ -247,15 +288,17 @@ button:active{
 
 
 /*****************************************************************
+   LOCATIONS   ***********************************   LOCATIONS   
+*****************************************************************/
+
+
+
+/*****************************************************************
    FOOTER   *****************************************   FOOTER   
 *****************************************************************/
-.footer{
+.footer {
   background-color: #909194;
   height: 10vh;
 }
 
 
-a:-webkit-any-link {
-  cursor: pointer;
-  text-decoration: none;
-}

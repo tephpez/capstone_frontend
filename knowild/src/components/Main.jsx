@@ -9,12 +9,12 @@ import Fruits from "./Fruits";
 import Roots from "./Roots";
 import Herbs from "./Herbs";
 import Leaves from "./Leaves";
+import Parks from "./Parks";
 
 
 function App() {
   return (
-    <div id="page-format">
-      <div id="component-container">
+    <div id="component-format">
         <Routes>
           <Route path="/" element={ <Home/> }></Route>
           <Route path="/Basket" element={ <Basket/> }></Route>
@@ -24,8 +24,8 @@ function App() {
           <Route path="/Roots" element={ <Roots/> }></Route>
           <Route path="/Herbs" element={ <Herbs/> }></Route>
           <Route path="/Leaves" element={ <Leaves/> }></Route>
+          <Route path="/Parks" element={ <Parks/> }></Route>
         </Routes>
-      </div>
     </div>
   );
 }
