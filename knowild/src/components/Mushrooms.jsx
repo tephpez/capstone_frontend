@@ -6,7 +6,7 @@ function Mushrooms () {
         <div className="home">
             <div id="component-format"> 
 
-            <div id="content-container">
+            <div id="component-format">
                 THIS IS MUSHROOMS PAGE
             </div>
             <div id="sidebar-container">

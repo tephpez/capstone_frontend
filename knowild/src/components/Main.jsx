@@ -10,22 +10,25 @@ import Roots from "./Roots";
 import Herbs from "./Herbs";
 import Leaves from "./Leaves";
 import Parks from "./Parks";
-
+import Nav from "./Nav";
 
 function App() {
   return (
-    <div id="component-format">
+    <div id="page-format">
+      <Nav />
+      <div id="component-format" style={{flexDirection: 'column'}}>
         <Routes>
-          <Route path="/" element={ <Home/> }></Route>
-          <Route path="/Basket" element={ <Basket/> }></Route>
-          <Route path="/Mushrooms" element={ <Mushrooms/> }></Route>
-          <Route path="/Flowers" element={ <Flowers/> }></Route>
-          <Route path="/Fruits" element={ <Fruits/> }></Route>
-          <Route path="/Roots" element={ <Roots/> }></Route>
-          <Route path="/Herbs" element={ <Herbs/> }></Route>
-          <Route path="/Leaves" element={ <Leaves/> }></Route>
-          <Route path="/Parks" element={ <Parks/> }></Route>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/Basket" element={<Basket />}></Route>
+          <Route path="/Mushrooms" element={<Mushrooms />}></Route>
+          <Route path="/Flowers" element={<Flowers />}></Route>
+          <Route path="/Fruits" element={<Fruits />}></Route>
+          <Route path="/Roots" element={<Roots />}></Route>
+          <Route path="/Herbs" element={<Herbs />}></Route>
+          <Route path="/Leaves" element={<Leaves />}></Route>
+          <Route path="/Parks" element={<Parks />}></Route>
         </Routes>
+      </div>
     </div>
   );
 }

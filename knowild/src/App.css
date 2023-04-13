@@ -19,26 +19,36 @@
   font-family: 'Comfortaa', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  min-width: 600px;
+  /* width: fit-content; */
+  /* min-width: 500px; */
 }
 
+#root{ 
+  background-color: #F2E9E2;
+  display: flex;
+  flex-direction: row;
+  
+}
 body {
   margin: 0 auto;
 }
 
-#component-format {
+#page-format {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
-#sidebar-container {
-  min-width: 180px;
+#component-format {
+  margin-right:20vw;
+  min-height: 80vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: start;
   align-items: start;
-  margin-top: 6px;
 }
 
+      
 button {
   font-family: 'Comfortaa', cursive;
   border: none;
@@ -64,7 +74,7 @@ a:-webkit-any-link {
   background-color: #AB8A75;
   border-radius: 50px;
   color:white;
-  min-width: 150px;
+  width: 120px;
   font-size: 15px;
   font-weight: 1000;
   height: 24px;
@@ -78,21 +88,27 @@ a:-webkit-any-link {
    NAVBAR   ******************************************   NAVBAR   
 *****************************************************************/
 #nav {
-  height: 130px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: end;
+  padding-left: 20px;
+  gap: 6px;
 }
 
-#logo-container {
-  background-color: #F2E9E2;
+#basket-btn {
+  background-color: #954A06;
+  margin-top: 16px;
+}
+
+
+/*****************************************************************
+   HEADER   ******************************************   HEADER   
+*****************************************************************/
+#header-container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: start;
-  margin-left: 30px;
-  margin-bottom: 13px;
+  margin: 0px 0px 15px 30px;
+  padding-top: 20px;;
 }
 
 #header-btn {
@@ -106,43 +122,24 @@ a:-webkit-any-link {
   opacity: .8;
 }
 
-#links-container {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  width:180px;
-  gap: 6px;
-}
-
-#basket-btn {
-  background-color: #954A06;
-  margin-top: 16px;
-}
-
 
 
 /*****************************************************************
    HOME   *********************************************   HOME   
 *****************************************************************/
-#content-container {
-  margin-left:10vw;
-  margin-right:2vw;
-}
 
-      @media only screen and (max-width: 650px) {
-        #content-container{
-          margin-left:20px;
-        }
-      }
 
 .section-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  min-height: 350px;
-  width: fit-content;
   justify-content: center;
   align-items: center;
+}
+
+.home{
+  min-height: 350px;
+  
 }
 
 #categories{
@@ -181,13 +178,18 @@ a:-webkit-any-link {
   height: 100%;
   opacity: .4;
 }
-
       #mushrooms {background-image: url("assets/mushroom.png");}
       #flowers {background-image: url("assets/flower.png");}
       #fruits {background-image: url("assets/fruit.png");}
       #roots {background-image: url("assets/root.png");}
       #herbs {background-image: url("assets/herb.png");}
       /* #seeds {background-image: url("assets/seed.png");} */
+
+      @media only screen and (max-width: 750px) {
+        .category-img {
+          width: 90%;
+        }
+      }
 
 .park-card {
   background-color: #B5B08E;
@@ -196,10 +198,10 @@ a:-webkit-any-link {
   width: 14.4vw;
 }
 
-      @media only screen and (max-width: 750px) {
+      @media only screen and (max-width: 970px) {
         .park-card {
-          width: 315px;
-          height: 210px;
+          width: 57vw;
+          height: 150px;
         }
       }
 
@@ -228,8 +230,74 @@ a:-webkit-any-link {
    BASKET   ******************************************   BASKET   
 *****************************************************************/
 
+#basket-page{
+  gap:10px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.basket{
+background-color: #B5B08E;
+border-radius: 20px;
+width: 65vw;
+padding: 20px 20px;
+gap: 8px;
+min-width: 400px;
+height: fit-content;
+
+}
+
+#profile{
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: nowrap;
+  /* padding: 0px 20px; */
+  /* margin:0 20px; */
+}
 
 
+.profpic-card{
+  background-color: #F2E9E2;
+  width: 11vw;
+  height: 100%;
+  min-width: 100px;
+  /* max-width: 150px;
+  max-height: 150px; */
+  border-radius: 20px;
+  right: 245px;
+  justify-self: left;
+}
+
+.profile-info{
+  width: 80%;
+  background-color: #F2E9E2;
+  border-radius: 20px;
+  height: 200px;
+
+}
+
+
+#my-finds{
+justify-content: space-evenly;
+}
+
+#my-map{
+  height: 300px;
+
+}
+
+.category-button{
+  width: 10vw;
+  height: 10vw;
+  background-color: #954A06;
+  border-radius: 50%;
+
+}
 /*****************************************************************
    CATEGORIES   *********************************   CATEGORIES   
 *****************************************************************/
