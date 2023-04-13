@@ -29,7 +29,6 @@ body {
 #component-format {
   display: flex;
   flex-direction: row;
-  /* justify-content: end; */
 }
 
 #sidebar-container {
@@ -57,6 +56,9 @@ button:hover {
 a:-webkit-any-link {
   cursor: pointer;
   text-decoration: none;
+  color: black;
+  font-weight: 800;
+
 }
 
 .app-btn {
@@ -121,6 +123,7 @@ a:-webkit-any-link {
   margin-top: 16px;
 }
 
+
 #add-btn {
   background-color: #909194;
 }
@@ -132,15 +135,13 @@ a:-webkit-any-link {
 #content-container {
   margin-left:10vw;
   margin-right:2vw;
-  min-width: 400px;
-  /* margin-right: 5vw; */
+
 }
 
 @media only screen and (max-width: 650px) {
   #content-container{
     margin-left:20px;
   }
-
 }
 
 .section-container {
@@ -148,15 +149,13 @@ a:-webkit-any-link {
   flex-direction: row;
   flex-wrap: wrap;
   min-height: 350px;
-  gap: 15px;
   width: fit-content;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
-  min-width: 250px;
 }
 
 .category-card {
-  width: 250px;
+  width: 20vw;
   height: 150px;
   background-color: #B5B08E;
   border-radius: 10px;
@@ -164,61 +163,45 @@ a:-webkit-any-link {
   flex-direction: column;
   text-align: left;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 110%;
+  background-position: center center;
+  min-width:150px;
+
+}
+#categories{
+  gap: 15px;
+
 }
 
-@media only screen and (max-width: 1092px) {
-  .category-card{
-    width: 220px;
-  }
-}
-
-@media only screen and (max-width: 720px) {
-  .category-card{
-    width: 140px;
-  }
-}
 #mushrooms {
   background-image: url("assets/mushroom.png");
-  background-size: 90%;
 }
 #flowers {
   background-image: url("assets/flower.png");
 }
 #fruits {
   background-image: url("assets/fruit.png");
-  background-size: 110%;
 }
 #roots {
   background-image: url("assets/root.png");
 }
 #herbs {
   background-image: url("assets/herb.png");
-  background-size: 110%;
 }
 #leafs {
   background-image: url("assets/leaf.png");
 }
 
 #category-title {
-  font-weight: 800;
-  color: black;
-  text-decoration: none;
   padding:15px 20px;
 }
 
 .category-img {
   width: 250px;
+  height: 100%;
   opacity: .4;
 }
 
-
-@media only screen and (max-width: 771px) {
-  .category-img{
-    width: 170px;
-    transform: translateY(3px);
-  }
-}
 
 .category-card:hover {
   transform: scale(1.05);
@@ -238,14 +221,18 @@ a:-webkit-any-link {
   background-color: #B5B08E;
   height: 300px;
   border-radius: 10px;
-  width: 184px;
+  width: 14.4vw;
 }
-@media only screen and (max-width: 1092px) {
+
+
+@media only screen and (max-width: 750px) {
   .park-card {
-    width: 330px;
+    width: 315px;
     height: 210px;
   }
 }
+
+
 .park-card:hover {
   transform: scale(1.05);
   opacity: .7;
@@ -256,25 +243,17 @@ a:-webkit-any-link {
 }
 
 #locations{
-  display: flex;
-  flex-direction: row;
-  /* flex-wrap: nowrap; */
-  width: fit-content;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.park-section{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  /* gap: 20px; */
-  justify-content: center;
-  align-items: center;
   gap: 15px;
-
+  width: 100%;
 }
+
+@media only screen and (max-width: 750px) {
+  #locations {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  }
+}
+
 /*****************************************************************
    BASKET   ******************************************   BASKET   
 *****************************************************************/

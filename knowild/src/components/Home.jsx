@@ -41,22 +41,22 @@ function Home() {
           <section className="section-container" id="locations">
               <Link to="/Parks">
                 <div className="park-card">
-                  <span id="category-title">PARK 1</span>
+                  <span id="park-title">PARK 1</span>
                 </div>
               </Link>
               <Link to="/Parks">
                 <div className="park-card">
-                <span id="category-title">PARK 2</span>
+                <span id="park-title">PARK 2</span>
                 </div>
               </Link>
               <Link to="/Parks">
                 <div className="park-card">
-                  <span id="category-title">PARK 3</span>
+                  <span id="park-title">PARK 3</span>
                 </div>
               </Link>
               <Link to="/Parks">
                 <div className="park-card">
-                  <span id="category-title">PARK 4</span>
+                  <span id="park-title">PARK 4</span>
                 </div>
               </Link>
           </section>
@@ -73,10 +73,10 @@ function Home() {
 export default Home;
 
 //  SETUP    //////////////////////////////////////////////////////////////////////////////////////////////
-//  CODE
-//  STYLES
+//  CODE     //////////////////////////////////////////////////////////////////////////////////////////////
+//  STYLES   //////////////////////////////////////////////////////////////////////////////////////////////
 //  SWEEP
 
-// sequelize model:generate --name User --attributes name:string,password:string,currentLocation:string,profPic:string
-// sequelize model:generate --name Park --attributes name:string,mapUrl:string,hours:string,state:string,address:string
-// sequelize model:generate --name Find --attributes commonName:string,botanicalName:string,uses:string,category:string,poisonWarning:string,dateFound:dateOnly,notes:string,picOne:string,picTwo:string,picThree:string,picFour:string,picFive:string,mapsLink:string,abundanceRating:integer,locationDesc:string,landmarks:string,userId:integer,parkId:integer
+// sequelize model:generate --name User --attributes name:string,password:string,currentLocation:string,profPic:text
+// sequelize model:generate --name Park --attributes name:string,mapUrl:text,hours:text,state:string,address:string,city:string,state:string
+// sequelize model:generate --name Find --attributes commonName:string,botanicalName:string,benefits:text,category:string,poisonWarning:string,dateFound:dateOnly,notes:text,picOne:text,picTwo:text,picThree:text,picFour:text,picFive:text,mapsLink:text,abundanceRating:integer,locationDesc:text,landmarks:string,userId:integer,parkId:integer
