@@ -31,9 +31,9 @@ function Home() {
                 <span id="category-title">herbs</span>
               </div>
             </Link>
-            <Link to="/Leaves">
-              <div className="category-card" id="leafs">
-                <span id="category-title">leaves</span>
+            <Link to="/Seeds">
+              <div className="category-card" id="seeds">
+                <span id="category-title">seeds</span>
               </div>
             </Link>
           </section>

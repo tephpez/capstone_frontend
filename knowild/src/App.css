@@ -45,20 +45,19 @@ button {
   cursor: pointer;
 }
 
-button:active {
-  transform: translateY(2px);
-}
+      button:active {
+        transform: translateY(2px);
+      }
 
-button:hover {
-  opacity: .7;
-}
+      button:hover {
+        opacity: .7;
+      }
 
 a:-webkit-any-link {
   cursor: pointer;
   text-decoration: none;
   color: black;
   font-weight: 800;
-
 }
 
 .app-btn {
@@ -71,10 +70,9 @@ a:-webkit-any-link {
   height: 24px;
 }
 
-.app-btn:active {
-  transform: translateY(2px);
-}
-
+      .app-btn:active {
+        transform: translateY(2px);
+      }
 
 /*****************************************************************
    NAVBAR   ******************************************   NAVBAR   
@@ -97,16 +95,6 @@ a:-webkit-any-link {
   margin-bottom: 13px;
 }
 
-
-
-#links-container {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  width:180px;
-  gap: 6px;
-}
-
 #header-btn {
   font-family: 'Righteous', cursive;
   font-size: 55px;
@@ -118,15 +106,19 @@ a:-webkit-any-link {
   opacity: .8;
 }
 
+#links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width:180px;
+  gap: 6px;
+}
+
 #basket-btn {
   background-color: #954A06;
   margin-top: 16px;
 }
 
-
-#add-btn {
-  background-color: #909194;
-}
 
 
 /*****************************************************************
@@ -135,14 +127,13 @@ a:-webkit-any-link {
 #content-container {
   margin-left:10vw;
   margin-right:2vw;
-
 }
 
-@media only screen and (max-width: 650px) {
-  #content-container{
-    margin-left:20px;
-  }
-}
+      @media only screen and (max-width: 650px) {
+        #content-container{
+          margin-left:20px;
+        }
+      }
 
 .section-container {
   display: flex;
@@ -154,6 +145,10 @@ a:-webkit-any-link {
   align-items: center;
 }
 
+#categories{
+  gap: 15px;
+}
+
 .category-card {
   width: 20vw;
   height: 150px;
@@ -162,35 +157,20 @@ a:-webkit-any-link {
   display: flex;
   flex-direction: column;
   text-align: left;
-  background-repeat: no-repeat;
-  background-size: 110%;
+  background-repeat:space;
+  background-size: 120%;
   background-position: center center;
   min-width:150px;
-
-}
-#categories{
-  gap: 15px;
-
 }
 
-#mushrooms {
-  background-image: url("assets/mushroom.png");
-}
-#flowers {
-  background-image: url("assets/flower.png");
-}
-#fruits {
-  background-image: url("assets/fruit.png");
-}
-#roots {
-  background-image: url("assets/root.png");
-}
-#herbs {
-  background-image: url("assets/herb.png");
-}
-#leafs {
-  background-image: url("assets/leaf.png");
-}
+      .category-card:hover {
+        transform: scale(1.05);
+        opacity: .7;
+      }
+
+      .category-card:active {
+        transform: translateY(2px);
+      }
 
 #category-title {
   padding:15px 20px;
@@ -202,20 +182,12 @@ a:-webkit-any-link {
   opacity: .4;
 }
 
-
-.category-card:hover {
-  transform: scale(1.05);
-  opacity: .7;
-}
-
-.category-card:active {
-  transform: translateY(2px);
-}
-
-.category-btn {
-  width: 250px;
-  height: 150px;
-}
+      #mushrooms {background-image: url("assets/mushroom.png");}
+      #flowers {background-image: url("assets/flower.png");}
+      #fruits {background-image: url("assets/fruit.png");}
+      #roots {background-image: url("assets/root.png");}
+      #herbs {background-image: url("assets/herb.png");}
+      /* #seeds {background-image: url("assets/seed.png");} */
 
 .park-card {
   background-color: #B5B08E;
@@ -224,35 +196,33 @@ a:-webkit-any-link {
   width: 14.4vw;
 }
 
+      @media only screen and (max-width: 750px) {
+        .park-card {
+          width: 315px;
+          height: 210px;
+        }
+      }
 
-@media only screen and (max-width: 750px) {
-  .park-card {
-    width: 315px;
-    height: 210px;
-  }
-}
+      .park-card:hover {
+        transform: scale(1.05);
+        opacity: .7;
+      }
 
-
-.park-card:hover {
-  transform: scale(1.05);
-  opacity: .7;
-}
-
-.park-card:active {
-  transform: translateY(2px);
-}
+      .park-card:active {
+        transform: translateY(2px);
+      }
 
 #locations{
   gap: 15px;
   width: 100%;
 }
 
-@media only screen and (max-width: 750px) {
-  #locations {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  }
-}
+      @media only screen and (max-width: 750px) {
+        #locations {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        }
+      }
 
 /*****************************************************************
    BASKET   ******************************************   BASKET   
