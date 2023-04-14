@@ -31,12 +31,13 @@
 }
 body {
   margin: 0 auto;
+  /* min-width: ; */
 }
 
 #page-format {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 #component-format {
@@ -46,8 +47,12 @@ body {
   flex-direction: row;
   justify-content: start;
   align-items: start;
+  margin-bottom: 20px;
 }
 
+.reset-basket{
+  justify-content: center;
+}
       
 button {
   font-family: 'Comfortaa', cursive;
@@ -127,11 +132,8 @@ a:-webkit-any-link {
 /*****************************************************************
    HOME   *********************************************   HOME   
 *****************************************************************/
-
-
 .section-container {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -139,7 +141,7 @@ a:-webkit-any-link {
 
 .home{
   min-height: 350px;
-  
+  min-width: 350px;
 }
 
 #categories{
@@ -150,7 +152,7 @@ a:-webkit-any-link {
   width: 20vw;
   height: 150px;
   background-color: #B5B08E;
-  border-radius: 10px;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -229,15 +231,6 @@ a:-webkit-any-link {
 /*****************************************************************
    BASKET   ******************************************   BASKET   
 *****************************************************************/
-
-#basket-page{
-  gap:10px;
-  display: flex;
-  flex-direction: column;
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
-
 .basket{
 background-color: #B5B08E;
 border-radius: 20px;
@@ -246,11 +239,14 @@ padding: 20px 20px;
 gap: 8px;
 min-width: 400px;
 height: fit-content;
-
+justify-content: center;
+margin-left: 4vw;
+margin-bottom: 20px;
+/* margin-top: 4px; */
 }
 
 #profile{
-  height: fit-content;
+  /* height: fit-content; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -263,9 +259,9 @@ height: fit-content;
 
 .profpic-card{
   background-color: #F2E9E2;
-  width: 11vw;
-  height: 100%;
-  min-width: 100px;
+  width: 150px;
+  height: 150px;
+  /* min-width: 100px; */
   /* max-width: 150px;
   max-height: 150px; */
   border-radius: 20px;
@@ -281,6 +277,9 @@ height: fit-content;
 
 }
 
+.finds{
+  height:200px;
+}
 
 #my-finds{
 justify-content: space-evenly;
@@ -292,8 +291,8 @@ justify-content: space-evenly;
 }
 
 .category-button{
-  width: 10vw;
-  height: 10vw;
+  width: 9vw;
+  height: 9vw;
   background-color: #954A06;
   border-radius: 50%;
 

@@ -1,7 +1,26 @@
-import { Link } from "react-router-dom";
-import Nav from "./Nav";
+import { Link, useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 
-function Home() {
+const Home = ({ findsContent }) => {
+  let navigate = useNavigate()
+
+  const [finds, setFinds] = useState([]);
+
+  useEffect(() => {
+    const getSelectedFind = async () => {
+      if (findsContent) {
+        let selectedFind = findsContent
+        setFinds(selectedFind);
+      }
+    };
+    getSelectedFind();
+  }, [findsContent]);
+console.log(finds)
+
+  const showDetails = (userId, findId) => {
+    navigate(`/finds/${userId}/${findId}`);
+  };
+
   return (
     <>
       <div className="section-container home" id="categories">
@@ -38,26 +57,20 @@ function Home() {
       </div>
 
       <div className="section-container home" id="locations">
-        <Link to="/Parks">
-          <div className="park-card">
-            <span id="park-title"> PARK 1 </span>
-          </div>
-        </Link>
-        <Link to="/Parks">
-          <div className="park-card">
-            <span id="park-title"> PARK 2 </span>
-          </div>
-        </Link>
-        <Link to="/Parks">
-          <div className="park-card">
-            <span id="park-title"> PARK 3 </span>
-          </div>
-        </Link>
-        <Link to="/Parks">
-          <div className="park-card">
-            <span id="park-title"> PARK 4 </span>
-          </div>
-        </Link>
+        <div className="park-card">
+          {finds.map((find, index) => (
+              <div key={index} onClick={() => showDetails(find.userId, find.id)}>
+                {/* <img
+                  id="latestPoster"
+                  className="park"
+                  src={find.image}
+                  alt="latestPoster"
+                ></img> */}
+              </div>
+            )) 
+            // .slice(0, 4)
+          }
+        </div>
       </div>
     </>
   );
@@ -68,6 +81,7 @@ export default Home;
 //  SETUP    //////////////////////////////////////////////////////////////////////////////////////////////
 //  CODE     //////////////////////////////////////////////////////////////////////////////////////////////
 //  STYLES   //////////////////////////////////////////////////////////////////////////////////////////////
+//  MAPP
 //  SWEEP
 
 // sequelize model:generate --name User --attributes name:string,password:string,currentLocation:string,profPic:text

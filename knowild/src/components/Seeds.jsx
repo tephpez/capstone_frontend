@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Leaves () {
+function Seeds () {
     return(
         <div>
-THIS IS Leaves PAGE
+THIS IS Seeds PAGE
         </div>
     );
 };
 
-export default Leaves;
+export default Seeds;
 
 
 //  SETUP    //////////////////////////////////////////////////////////////////////////////////////////////

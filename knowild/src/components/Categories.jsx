@@ -1,34 +1,35 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import Client from "../services/api";
 
-function Finds() {
+
+function Categories() {
   return (
-    <div className="finds-page">
-      <span> FINDS PAGE </span>
-      <div className="mushrooms-container">
-        <span> MUSHROOMS </span>
+    <>
+      <div className="basket finds">
+      mushrooms
       </div>
-      <div className="flowers-container">
-        <span> FLOWERS </span>
+      <div className="basket finds">
+      flowers
       </div>
-      <div className="roots-container">
-        <span> ROOTS </span>
+      <div className="basket finds">
+      roots
       </div>
-      <div className="fruits-container">
-        <span> FRUITS </span>
+      <div className="basket finds">
+      fruits
       </div>
-      <div className="leafs-container">
-        <span> LEAFS </span>
+      <div className="basket finds">
+      herbs
       </div>
-      <div className="herbs-container">
-        <span> HERBS </span>
+      <div className="basket finds">
+      seeds
       </div>
-    </div>
+    </>
   );
 }
 
-export default Footer;
+export default Categories;
 
 //  SETUP    //////////////////////////////////////////////////////////////////////////////////////////////
 //  CODE

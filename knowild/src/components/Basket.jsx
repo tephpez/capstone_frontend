@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import Client from "../services/api";
+
+
 function Basket() {
   return (
-    <div id="basket-page">
+    <div className="reset-basket">
       <div className="section-container basket" id="profile">
         <div className="profpic-card">
           <img src="" alt="profile pic"></img>
-        </div>
-        <div className="location">
-
         </div>
         <div className="profile-info">
           <p id="category-title"> profile section </p>
@@ -27,6 +27,7 @@ function Basket() {
         <span id="park-title"> my map </span>
       </div>
     </div>
+
   );
 }
 
