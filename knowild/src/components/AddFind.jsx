@@ -43,10 +43,10 @@ const AddFind = () => {
   return (
     <div className="login-page">
       <div className="basket login">
-        <div id="park-card-title">
+        <div className="park-card-title"><br></br>
           <span className="state-title">ADD FIND</span>
         </div>
-        <hr></hr>
+        <hr></hr><br></br>
 
         <div className="modal-body">
           <form className="finds-form">
@@ -97,7 +97,7 @@ const AddFind = () => {
                   onChange={handleChange}
                   className="form-input"
                 >
-                    <option value="------"></option>
+                    <option value=""></option>
                     <option value="mushrooms">mushrooms</option>
                     <option value="flowers">flowers</option>
                     <option value="fruits">fruits</option>
@@ -237,7 +237,7 @@ const AddFind = () => {
                   className="form-input"
                 />
               </div>
-              <br></br><br></br>
+              <br></br><br></br><br></br>
             <button 
                 className="app-btn fog submit" 
                 onClick={handleSubmit}> submit

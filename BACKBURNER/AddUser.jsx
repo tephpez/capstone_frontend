@@ -8,7 +8,7 @@
 //     <div className="login-page">
 //       <div className="basket login">
 
-//         <div id="park-card-title">
+//         <div className="park-card-title">
 //           <span className="state-title">REGISTER</span>
 //           </div><hr></hr>
 

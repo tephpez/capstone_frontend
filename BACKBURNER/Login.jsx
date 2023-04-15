@@ -17,7 +17,7 @@
 //     <div className="login-page">
 //       <div className="basket login">
 
-//         <div id="park-card-title">
+//         <div className="park-card-title">
 //           <span className="state-title">LOGIN</span>
 //         </div><hr></hr>
 

@@ -35,10 +35,10 @@ const AddPark = () => {
   return (
     <div className="login-page">
       <div className="basket login">
-        <div id="park-card-title">
+        <div className="park-card-title"><br></br>
           <span className="state-title">ADD PARK</span>
         </div>
-        <hr></hr>
+        <hr></hr><br></br>
 
         <div className="modal-body">
           <form className="park-form">
@@ -65,6 +65,7 @@ const AddPark = () => {
                 </label>
                 <br></br>
                 <input
+                  required
                   type="text"
                   id="park-address"
                   name="parkAddress"
@@ -89,7 +90,7 @@ const AddPark = () => {
                   onChange={handleChange}
                   className="form-input"
                 >
-                    <option value="">-------</option>
+                    <option value=""></option>
                     <option value="PA">PA</option>
                     <option value="NJ">NJ</option>
                 </select>
@@ -119,6 +120,7 @@ const AddPark = () => {
                 </label>
                 <br></br>
                 <input
+                  required
                   type="text"
                   id="zip"
                   name="zip"
@@ -135,6 +137,7 @@ const AddPark = () => {
                 </label>
                 <br></br>
                 <input
+                  required
                   type="text"
                   id="website"
                   name="website"
@@ -150,7 +153,8 @@ const AddPark = () => {
                   <span> PICTURE </span>
                 </label>
                 <br></br>
-                <textarea
+                <input
+                  required
                   type="text"
                   id="park-pic"
                   name="parkPic"
@@ -158,7 +162,7 @@ const AddPark = () => {
                   onChange={handleChange}
                   className="form-input"
                 />
-              </div><br></br>
+              </div><br></br><br></br><br></br>
             <button 
                 className="app-btn fog submit"
                 onClick={handleSubmit}> submit 
