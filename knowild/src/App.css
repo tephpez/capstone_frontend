@@ -109,30 +109,38 @@ hr {
 
 input{
   border-radius: 5px;
-  width: 250px;
+  width: 300px;
   height: 20px;
   border: 1px solid black;
   font-style: italic;
+  font-family: 'Comfortaa', cursive;
+
 }
 
 textarea{
   border-radius: 5px;
-  width: 250px;
+  width: 300px;
   height: 60px;
   border: 1px solid black;
   font-style: italic;
+  font-family: 'Comfortaa', cursive;
+
 }
 
-.react-datepicker input {
-  font-family: Arial, sans-serif;
-}
 
 select{
   border-radius: 5px;
-  width: 250px;
+  width: 300px;
   height: 25px;
   border: 1px solid black;
   font-style: italic;
+  color: black;
+  font-family: 'Comfortaa', cursive;
+
+}
+
+option{
+  font-family: 'Comfortaa', cursive;
 
 
 }

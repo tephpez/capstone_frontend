@@ -89,9 +89,9 @@ const AddPark = () => {
                   onChange={handleChange}
                   className="form-input"
                 >
-                    <option value="------"></option>
-                    <option value="PA"></option>
-                    <option value="NJ"></option>
+                    <option value="">-------</option>
+                    <option value="PA">PA</option>
+                    <option value="NJ">NJ</option>
                 </select>
               </div>
               <br></br>

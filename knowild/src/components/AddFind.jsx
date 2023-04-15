@@ -98,12 +98,12 @@ const AddFind = () => {
                   className="form-input"
                 >
                     <option value="------"></option>
-                    <option value="mushrooms"></option>
-                    <option value="flowers"></option>
-                    <option value="fruits"></option>
-                    <option value="roots"></option>
-                    <option value="herbs"></option>
-                    <option value="seeds"></option>
+                    <option value="mushrooms">mushrooms</option>
+                    <option value="flowers">flowers</option>
+                    <option value="fruits">fruits</option>
+                    <option value="roots">roots</option>
+                    <option value="herbs">herbs</option>
+                    <option value="seeds">seeds</option>
                 </select>
               </div>
               <br></br>
