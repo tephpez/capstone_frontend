@@ -1,12 +1,11 @@
+import './App.css';
+import { useNavigate, useParams } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 
-import './App.css';
-import Nav from "./components/Nav";
-import Main from "./components/Main";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Client from "./services/api"
-import { useNavigate, useParams } from "react-router-dom";
+import Client from "./services/api";
+import Main from "./components/AppPages/Main";
+import Footer from "./components/AppPages/Footer";
+import Header from "./components/AppPages/Header";
 
 
 function App() {
@@ -36,8 +35,9 @@ function App() {
   let navigate = useNavigate();
 
   const getData = () => {
-    Client.get(`/api/finds`).then((getData) => {
-      setFindsContent(getData.data);
+    Client.get(`/api/finds`).then((res) => {
+      // console.log(res.data)
+      setFindsContent(res.data);
     });
   };
   
@@ -47,7 +47,7 @@ function App() {
 
 
   const handleDelete = (id) => {
-    console.log(id);
+    // console.log(id);
     Client.delete(`/api/finds/${id}`).then(() => {
       getData();
     });
@@ -69,7 +69,7 @@ function App() {
     <div id="app">
       <Header/>
       <Main 
-        findContent={ findsContent }
+        findsContent={ findsContent }
         updateFind={ updateFind }
         findsFormData={ findsFormData }
         handleSubmit={ handleSubmit }

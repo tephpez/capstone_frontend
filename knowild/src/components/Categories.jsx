@@ -1,29 +1,85 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
-import Client from "../services/api";
-
 
 function Categories() {
   return (
     <>
-      <div className="basket finds">
-      mushrooms
+      <div className="basket scroll">
+        <span className="park-card-title state-title">MUSHROOMS</span>
+        <hr></hr>
+        <div className="scroll-wrap">
+          <button className="state-park-card"></button>
+          <button className="state-park-card"></button>
+          <button className="state-park-card"></button>
+          <button className="state-park-card"></button>
+          <button className="state-park-card"></button>
+          <button className="state-park-card"></button>
+          <button className="state-park-card"></button>
+        </div>
       </div>
-      <div className="basket finds">
-      flowers
+      <div className="basket scroll">
+        <span className="park-card-title state-title">FLOWERS</span>
+        <hr></hr>
+        <div className="scroll-wrap">
+          <button className="state-park-card"></button>
+          <button className="state-park-card"></button>
+          <button className="state-park-card"></button>
+          <button className="state-park-card"></button>
+          <button className="state-park-card"></button>
+          <button className="state-park-card"></button>
+          <button className="state-park-card"></button>
+        </div>
       </div>
-      <div className="basket finds">
-      roots
+      <div className="basket scroll">
+        <span className="park-card-title state-title">FRUITS</span>
+        <hr></hr>
+        <div className="scroll-wrap">
+          <button className="state-park-card"></button>
+          <button className="state-park-card"></button>
+          <button className="state-park-card"></button>
+          <button className="state-park-card"></button>
+          <button className="state-park-card"></button>
+          <button className="state-park-card"></button>
+          <button className="state-park-card"></button>
+        </div>
       </div>
-      <div className="basket finds">
-      fruits
+      <div className="basket scroll">
+        <span className="park-card-title state-title">ROOTS</span>
+        <hr></hr>
+        <div className="scroll-wrap">
+          <button className="state-park-card"></button>
+          <button className="state-park-card"></button>
+          <button className="state-park-card"></button>
+          <button className="state-park-card"></button>
+          <button className="state-park-card"></button>
+          <button className="state-park-card"></button>
+          <button className="state-park-card"></button>
+        </div>
       </div>
-      <div className="basket finds">
-      herbs
+      <div className="basket scroll">
+        <span className="park-card-title state-title">HERBS</span>
+        <hr></hr>
+        <div className="scroll-wrap">
+          <button className="state-park-card"></button>
+          <button className="state-park-card"></button>
+          <button className="state-park-card"></button>
+          <button className="state-park-card"></button>
+          <button className="state-park-card"></button>
+          <button className="state-park-card"></button>
+          <button className="state-park-card"></button>
+        </div>
       </div>
-      <div className="basket finds">
-      seeds
+      <div className="basket scroll">
+        <span className="park-card-title state-title">SEEDS</span>
+        <hr></hr>
+        <div className="scroll-wrap">
+          <button className="state-park-card"></button>
+          <button className="state-park-card"></button>
+          <button className="state-park-card"></button>
+          <button className="state-park-card"></button>
+          <button className="state-park-card"></button>
+          <button className="state-park-card"></button>
+          <button className="state-park-card"></button>
+        </div>
       </div>
     </>
   );

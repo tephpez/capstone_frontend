@@ -1,7 +1,7 @@
 import React from "react";
 // import { Link } from "react-router-dom";
 
-const Finds = ({ findsContent }) => {
+const FindPage = () => {
 
   // const findType = window.location.href
 
@@ -15,7 +15,7 @@ const Finds = ({ findsContent }) => {
 }
 
   
-  export default Finds;
+  export default FindPage;
 
 
 

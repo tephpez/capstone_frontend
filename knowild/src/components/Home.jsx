@@ -2,9 +2,9 @@ import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 const Home = ({ findsContent }) => {
-  let navigate = useNavigate()
-
   const [finds, setFinds] = useState([]);
+  
+  let navigate = useNavigate()
 
   useEffect(() => {
     const getSelectedFind = async () => {
@@ -15,7 +15,6 @@ const Home = ({ findsContent }) => {
     };
     getSelectedFind();
   }, [findsContent]);
-console.log(finds)
 
   const showDetails = (userId, findId) => {
     navigate(`/finds/${userId}/${findId}`);
@@ -57,31 +56,28 @@ console.log(finds)
       </div>
 
       <div className="section-container home" id="locations">
-        <div className="park-card">
-          {finds.map((find, index) => (
-              <div key={index} onClick={() => showDetails(find.userId, find.id)}>
-                {/* <img
-                  id="latestPoster"
-                  className="park"
-                  src={find.image}
-                  alt="latestPoster"
-                ></img> */}
-              </div>
-            )) 
-            // .slice(0, 4)
-          }
+      {finds.map((find, index) => ( 
+        <div className="park-card" key={index} onClick={() => showDetails(find.userId, find.id)}>
+          <p className="park-card-title">{find.name}</p>
         </div>
+          )) 
+          .slice(0, 4)
+        } 
       </div>
     </>
   );
 }
 
 export default Home;
+// {parks.map((park, index) => ( 
+// <div className="park-card" key={index} onClick={() => showParkDetails(find.userId, find.id)}> 
+// <p className="park-card-title">{find.name}</p>
+
 
 //  SETUP    //////////////////////////////////////////////////////////////////////////////////////////////
 //  CODE     //////////////////////////////////////////////////////////////////////////////////////////////
 //  STYLES   //////////////////////////////////////////////////////////////////////////////////////////////
-//  MAPP
+//  MAPPED         
 //  SWEEP
 
 // sequelize model:generate --name User --attributes name:string,password:string,currentLocation:string,profPic:text
